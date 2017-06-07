@@ -97,4 +97,4 @@ For all resources in the recovery category of Protection & Recovery, use **SR** 
 1. SRProviderRegistration
 1. SRProviderProxy
 
-For all comments and feedback, use the issue #1.
+For all comments and feedback, use the issue [#1](https://github.com/rchaganti/OMSDsc/issues/1).
