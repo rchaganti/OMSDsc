@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/rchaganti/OMSDsc.png?label=ready&title=Ready)](https://waffle.io/rchaganti/OMSDsc?utm_source=badge)
 # OMSDsc #
 PowerShell Desired State Configuration resource module for managing Microsoft Operations Management Suite service configuration on Windows Endpoints.
 
