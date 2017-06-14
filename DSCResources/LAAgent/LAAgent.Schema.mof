@@ -1,0 +1,9 @@
+[ClassVersion("1.0.0.0"), FriendlyName("LAAgent")]
+class LAAgent : OMI_BaseResource
+{
+	[Key, Description("Absolute path to the Microsoft Monitoring Agent installler")] String InstallerPath;
+	[Read, Description("Product ID of Microsoft Monitoring Agent")] String ProductName;
+	[Write, Description("Whether switch should be present or absent"), ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+	[Write, Description("Version of the Microsoft Monitoring Agent")] String ProductVersion;
+	[Read, Description("Product ID of Microsoft Monitoring Agent")] String ProductId;
+};

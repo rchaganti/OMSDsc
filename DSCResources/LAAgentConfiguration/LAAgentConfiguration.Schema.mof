@@ -1,0 +1,7 @@
+[ClassVersion("1.0.0.0"), FriendlyName("LAAgentConfiguration")]
+class LAAgentConfiguration : OMI_BaseResource
+{
+	[Key, Description("Single instance indicator and unique property for resource instance."), ValueMap{"Yes"}, Values{"Yes"}] String SingleInstance;
+	[Write, Description("Enable Active Directory Integration.")] Boolean ActiveDirectoryIntegrationEnabled;
+	[Write, Description("Enable local collection.")] Boolean LocalCollectionEnabled;
+};

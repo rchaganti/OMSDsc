@@ -1,0 +1,11 @@
+[ClassVersion("1.0.0.0"), FriendlyName("LAAgentRegistration")]
+class LAAgentRegistration : OMI_BaseResource
+{
+	[Key, Description("Workspace ID for the OMS Workspace.")] String WorkspaceId;
+	[Write, Description("Workspace Key for the OMS Workspace.")] String WorkspaceKey;
+	[Write, Description("Azure Cloud type where the OMS service is deployed."), ValueMap{"AzureCommercial","AzureGoverment"}, Values{"AzureCommercial","AzureGoverment"}] String AzureCloudType;
+	[Write, Description("OMS workspace registration should exist or not."), ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+	[Write, Description("Force a OMS workspace key update.")] Boolean Force;
+	[Read, Description("OMS workspace connection status.")] Uint32 ConnectionStatus;
+	[Read, Description("OMS workspace connection status description.")] String ConnectionStatusText;
+};
