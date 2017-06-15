@@ -1,0 +1,9 @@
+[ClassVersion("1.0.0.0"), FriendlyName("LAAgentProxy")]
+class LAAgentProxy : OMI_BaseResource
+{
+	[Key, Description("Proxy URL for LA Agent OMS connection.")] String ProxyUrl;
+	[Write, Description("Proxy credentials for OMS connection."), EmbeddedInstance("MSFT_Credential")] string ProxyCredential;
+	[Write, Description("Force proxy credential update.")] Boolean Force;
+	[Write, Description("Proxy configration should exist or not."), ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+	[Read, Description("Proxy username for LA Agent OMS connection.")] String ProxyUsername;
+};
