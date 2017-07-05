@@ -12,8 +12,4 @@ These offerings in Microsoft OMS enable hybrid cloud management and extend Azure
 
 This soon-to-be-released PowerShell DSC resource module includes resource modules that enable automated configuration on-prem integration with OMS.
 
-Here is an [RFC](https://github.com/rchaganti/OMSDsc/blob/master/RFC/RFC0001-ResourceNaming.md) (Request For Comments) that I just opened to gather some suggestions and ideas around naming of the resources in this module. 
-
-Make a note that the module name itself may change based on feedback and it need not be OMSDsc.
-
 Go ahead and add your suggestions/feedback here.
