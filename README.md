@@ -10,6 +10,13 @@ Microsoft OMS includes the following four offerings:
 
 These offerings in Microsoft OMS enable hybrid cloud management and extend Azure services such as data protection and disaster recovery, Azure Automation Runbooks and DSC, and Log & event collection and analysis.
 
-This soon-to-be-released PowerShell DSC resource module includes resource modules that enable automated configuration on-prem integration with OMS.
+This soon-to-be-released PowerShell DSC resource module includes resource modules that enable automated configuration on-premises integration with OMS.
 
-Go ahead and add your suggestions/feedback here.
+Here is a list of resources that I have been working on.
+
+| Resource Name  | Description | Status in the repository |
+| -------------   | ------------- | ------- |
+|LAAgent| Install and upgrade Log Analytics Agent| [Available without tests](https://github.com/rchaganti/OMSDsc/tree/dev/DSCResources/LAAgent)|
+|LAAgentConfiguration| Helps enable/disable AD integration and/or local collection. | [Available without tests.](https://github.com/rchaganti/OMSDsc/tree/dev/DSCResources/LAAgentConfiguration)| 
+|LAAgentRegistration| Helps register LA agent with OMS workspace(s).|[Available without tests.](https://github.com/rchaganti/OMSDsc/tree/dev/DSCResources/LAAgentRegistration)|
+|LAAgentProxy| Helps configure proxy for the LA agent. | [Available without tests](https://github.com/rchaganti/OMSDsc/tree/dev/DSCResources/LAAgentProxy)|
